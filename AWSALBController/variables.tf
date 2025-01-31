@@ -10,10 +10,6 @@ variable "service_account" {
   type        = string
   description = "Service Account name associated to the controller pod"
 }
-variable "irsa_service_account" {
-  type        = list(string)
-  description = "Service Account with namespace format (['system:serviceaccount:namespace:service_account']) associated with IRSA"
-}
 variable "controller_version" {
   type        = string
   description = "Helm Chart version of the AWS ALB Controller"

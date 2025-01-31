@@ -13,7 +13,7 @@ module "irsa" {
   oidc_provider = replace(var.oidc_url, "https://", "")
 
 
-  service_account = var.irsa_service_account
+  service_account = ["system:serviceaccount:${var.namespace}:${var.service_account}"]
   role_name       = "${var.environment}-${var.app_name}-alb-controller-irsa"
   policy_arns     = [aws_iam_policy.controller_policy.arn]
 
