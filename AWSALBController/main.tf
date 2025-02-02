@@ -31,7 +31,7 @@ resource "helm_release" "aws_alb_controller" {
   cleanup_on_fail = true
   values          = var.helm_values
 
-
+  timeout = 600
   dynamic "set" {
     for_each = local.mandatory_helm_chart_values
     iterator = helm_key_value
