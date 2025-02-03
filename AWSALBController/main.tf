@@ -41,6 +41,6 @@ resource "helm_release" "aws_alb_controller" {
     }
   }
 
-
+depends_on = [ aws_iam_policy.controller_policy , module.irsa ]
 
 }
