@@ -19,3 +19,7 @@ variable "cluster_connect_secret_name" {
   type = string
   description = "Secret name created for connecting Cluster with ArgoCD"
 }
+variable "namespace" {
+  type = string
+  description = "The namespace to deploy secret in"
+}

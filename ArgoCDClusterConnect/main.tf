@@ -4,6 +4,7 @@ resource "kubernetes_secret" "example" {
     labels = {
       "argocd.argoproj.io/secret-type" = "cluster"
     }
+    namespace = var.namespace
   }
 
   data = {
