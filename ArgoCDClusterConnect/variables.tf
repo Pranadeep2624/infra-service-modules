@@ -15,3 +15,7 @@ variable "cluster_certificate_authority_data" {
   type        = string
   description = "CA data of the AWS Cluster to be connected with ArgoCD"
 }
+variable "cluster_connect_secret_name" {
+  type = string
+  description = "Secret name created for connecting Cluster with ArgoCD"
+}
