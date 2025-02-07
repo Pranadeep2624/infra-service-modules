@@ -10,7 +10,7 @@ variable "service_account" {
   type        = string
   description = "Service Account name associated to the controller pod"
 }
-variable "controller_version" {
+variable "app_version" {
   type        = string
   description = "Helm Chart version of the AWS ALB Controller"
 }
@@ -19,11 +19,6 @@ variable "cluster_name" {
   description = "EKS Cluster Name"
 }
 
-variable "helm_values" {
-  type        = list(string)
-  description = "Helm Chart Values in yaml content"
-  default     = []
-}
 variable "app_name" {
   description = "project name for which VPC is created"
   type        = string
