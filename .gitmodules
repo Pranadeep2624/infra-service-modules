@@ -1,0 +1,9 @@
+[submodule "external_repos/terraform-aws-module"]
+	path = external_repos/terraform-aws-module
+	url = https://github.com/Pranadeep2624/terraform-aws-modules.git
+[submodule "external_repos/voting-app-infra"]
+	path = external_repos/voting-app-infra
+	url = https://github.com/Pranadeep2624/voting-app-infra.git
+[submodule "external_repos/central-helm-charts"]
+	path = external_repos/central-helm-charts
+	url = https://github.com/Pranadeep2624/central-helm-charts.git
